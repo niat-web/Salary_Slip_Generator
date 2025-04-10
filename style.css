@@ -1,0 +1,122 @@
+/* style.css */
+
+ :root {
+  --primary-color: #ffc107; /* Yellow */
+  --secondary-color: #343a40; /* Dark Gray */
+  --text-color-light: #fff;
+  --text-color-dark: #212529;
+  --background-color-light: #f8f9fa;
+  --background-color-dark: #343a40;
+  --card-background-light: #fff;
+  --card-background-dark: #495057;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+ }
+
+ [data-theme="dark"] {
+  --text-color-light: #212529;
+  --text-color-dark: #fff;
+  --background-color-light: #343a40;
+  --background-color-dark: #f8f9fa;
+  --card-background-light: #495057;
+  --card-background-dark: #fff;
+
+ }
+
+ body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+  transition: background-color 0.3s, color 0.3s;
+ }
+
+ header {
+  background-color: var(--secondary-color) !important;
+ }
+
+ .container {
+  max-width: 960px;
+ }
+
+ .card {
+  background-color: var(--card-background-light);
+  box-shadow: 0 0.25rem 0.5rem var(--shadow-color);
+  border: none;
+  transition: background-color 0.3s;
+ }
+
+ .card-body {
+  padding: 1.5rem;
+ }
+
+ .form-control {
+  border-radius: 0.25rem;
+ }
+
+ .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-color-dark);
+  transition: background-color 0.3s, border-color 0.3s;
+ }
+
+ .btn-primary:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+ }
+
+ .btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: background-color 0.3s, border-color 0.3s;
+ }
+
+ .btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+ }
+
+ footer {
+  background-color: var(--secondary-color) !important;
+ }
+
+ /* Dark Mode Toggle Button */
+ #darkModeToggle {
+  background-color: transparent;
+  border: 1px solid var(--text-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.3s, color 0.3s;
+ }
+
+ #darkModeToggle:hover {
+  background-color: var(--text-color-light);
+  color: var(--secondary-color);
+ }
+
+ /* Floating Action Button (FAB) - Example, not fully implemented */
+ .fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: var(--text-color-dark);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  line-height: 56px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: transform 0.3s;
+ }
+
+ .fab:hover {
+  transform: scale(1.1);
+ }
+
+ /* Form Validation Styles */
+ .form-control.is-invalid {
+  border-color: #dc3545;
+ }
+
+ .invalid-feedback {
+  color: #dc3545;
+ }
