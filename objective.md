@@ -4,7 +4,7 @@
 This project provides a user-friendly interface for generating salary slips. Users input employee details (name, designation, salary components), and the application dynamically calculates and displays the gross salary, tax deduction, and net salary. The application fetches user data from an external API to display the username and email, and incorporates dark mode functionality. The core technologies used are JavaScript, HTML, and CSS, leveraging DOM manipulation for dynamic content updates and event handling for user interactions. The API data is fetched using the `fetch` API with error handling and a proxy fallback.
 
 ## Output
-<iframe src="https://github.com/niat-web/Salary_Slip_Generator" height="1000" width="300" title="Salary_Slip_Generator"></iframe>
+<iframe src="https://niat-web.github.io/Salary_Slip_Generator/" height="1000" width="300" title="Salary_Slip_Generator"></iframe>
 
 ## Project Requirements
 **Technologies:** JavaScript, HTML, CSS
